@@ -1,6 +1,6 @@
 {
   "name": "godarkmode",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Manages the Dark & Light mode switch for your website while being TailwindCSS compatible.",
   "main": "index.js",
   "scripts": {

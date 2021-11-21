@@ -1,8 +1,6 @@
 # goDarkMode
 
-A simple library for switching between Dark & Light mode on your website. It does this by
-managing the `dark` CSS class on your document. **goDarkMode** is also fully compatible with
-TailwindCSS, as it was originally designed to be used with it.
+A simple library for switching between Dark & Light mode on your website. It does this by managing the `dark` CSS class on your document element. **goDarkMode** is also fully compatible with TailwindCSS, as it was originally designed to be used with it and Next.js.
 
 ## Installation
 
@@ -63,7 +61,7 @@ Everyone is encouraged to help improve this project. Here are a few ways you can
 
 ## Credit
 
-**goDarkMode** is made by [Usman Bashir](https://usmanbashir.com). Keep in touch with me by subscribing to my [The Weekly Dispatch](https://twd.usm.io/) newsletter.
+**goDarkMode** is made by [Usman Bashir](https://usmanbashir.com). Keep in touch with me by subscribing to [The Weekly Dispatch](https://twd.usm.io/) newsletter.
 
 ## License
 
