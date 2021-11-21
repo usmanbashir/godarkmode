@@ -1,8 +1,8 @@
 {
   "name": "godarkmode",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Manages the Dark & Light mode switch for your website while being TailwindCSS compatible.",
-  "main": "index.js",
+  "main": "useDarkMode.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

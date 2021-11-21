@@ -1,6 +1,6 @@
 # goDarkMode
 
-A simple library for switching between Dark & Light mode on your website. It does this by managing the `dark` CSS class on your document element. **goDarkMode** is also fully compatible with TailwindCSS, as it was originally designed to be used with it and Next.js.
+A simple library for switching between Dark & Light mode on your website. It does this by managing the `dark` CSS class on your document element. **goDarkMode** is also fully compatible with TailwindCSS, as it was originally designed to be used with it along with Next.js and React.js.
 
 ## Installation
 
@@ -18,7 +18,7 @@ $ yarn add godarkmode
 
 Using unpkg CDN:
 ```
-<script src="https://unpkg.com/godarkmode/index.js"></script>
+<script src="https://unpkg.com/godarkmode/useDarkMode.js"></script>
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ method, `.goDarkMode``:
 // a mode based on their default OS settings.
 //
 // On future visits, just pick their saved choice.
-const mode = goDarkMode({mode: 'auto'}); // => 'dark' || 'light'
+const mode = useDarkMode({mode: 'auto'}); // => 'dark' || 'light'
 
 
 // For the website to use the dark mode either
@@ -39,7 +39,7 @@ const mode = goDarkMode({mode: 'auto'}); // => 'dark' || 'light'
 // via the UI.
 //
 // You just need to specify the dark mode.
-const mode = goDarkMode({mode: 'dark'}); // => 'dark'
+const mode = useDarkMode({mode: 'dark'}); // => 'dark'
 
 
 // For the website to use the light mode either
@@ -47,7 +47,7 @@ const mode = goDarkMode({mode: 'dark'}); // => 'dark'
 // via the UI.
 //
 // You just need to specify the light mode.
-const mode = goDarkMode({mode: 'light'}); // => 'light'
+const mode = useDarkMode({mode: 'light'}); // => 'light'
 ```
 
 ## Contributing
