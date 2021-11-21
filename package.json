@@ -1,0 +1,35 @@
+{
+  "name": "godarkmode",
+  "version": "1.0.0",
+  "description": "Manages the Dark & Light mode switch for your website while being TailwindCSS compatible.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usmanbashir/usedarkmode.git"
+  },
+  "keywords": [
+    "dark",
+    "dark-mode",
+    "light",
+    "light-mode",
+    "mode",
+    "tailwindcss",
+    "css",
+    "switch",
+    "browser",
+    "lib",
+    "utils",
+    "react",
+    "hooks",
+    "react-hooks"
+  ],
+  "author": "Usman Bashir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/usmanbashir/usedarkmode/issues"
+  },
+  "homepage": "https://github.com/usmanbashir/usedarkmode#readme"
+}
