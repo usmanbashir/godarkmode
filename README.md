@@ -1,6 +1,6 @@
 # goDarkMode
 
-A simple library for switching between Dark & Light mode on your website. It does this by managing the `dark` CSS class on your document element. **goDarkMode** is also fully compatible with TailwindCSS, as it was originally designed to be used with it along with Next.js and React.js.
+A simple library for switching between Dark & Light mode on your website. It does this by managing the CSS class `dark` on your document element. **goDarkMode** is compatible with **TailwindCSS** and **Next.js**. But, you can also use it standalone in a vanilla JS project.
 
 ## Installation
 
@@ -18,7 +18,7 @@ $ yarn add godarkmode
 
 Using unpkg CDN:
 ```
-<script src="https://unpkg.com/godarkmode/useDarkMode.js"></script>
+<script src="https://unpkg.com/godarkmode/goDarkMode.js"></script>
 ```
 
 ## Usage
@@ -27,11 +27,11 @@ Using unpkg CDN:
 method, `.goDarkMode``:
 
 ```JavaScript
-// On users first visit to the website, pick
+// On a users first visit to the website, pick
 // a mode based on their default OS settings.
 //
 // On future visits, just pick their saved choice.
-const mode = useDarkMode({mode: 'auto'}); // => 'dark' || 'light'
+const mode = goDarkMode('auto') // => 'dark' || 'light'
 
 
 // For the website to use the dark mode either
@@ -39,7 +39,7 @@ const mode = useDarkMode({mode: 'auto'}); // => 'dark' || 'light'
 // via the UI.
 //
 // You just need to specify the dark mode.
-const mode = useDarkMode({mode: 'dark'}); // => 'dark'
+const mode = goDarkMode('dark') // => 'dark'
 
 
 // For the website to use the light mode either
@@ -47,7 +47,27 @@ const mode = useDarkMode({mode: 'dark'}); // => 'dark'
 // via the UI.
 //
 // You just need to specify the light mode.
-const mode = useDarkMode({mode: 'light'}); // => 'light'
+const mode = goDarkMode('light') // => 'light'
+```
+
+## Usage with Next.js
+
+To avoid the package from breaking your Next.js build as it is only meant to be used in a browser environment. You need to install the `next-transpile-modules` package and configure your `next.config.js` file accordingly.
+
+```JavaScript
+// next.config.js
+
+const withTM = require('next-transpile-modules')(['godarkmode'])
+
+module.exports = withTM({
+  reactStrictMode: true,
+})
+```
+
+Followed by wherever you are calling the `goDarkMode` method, make sure to check it is only called when running inside of a browser environment.
+
+```JavaScript
+typeof window !== 'undefined' && goDarkMode('auto');
 ```
 
 ## Contributing

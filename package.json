@@ -1,8 +1,8 @@
 {
   "name": "godarkmode",
-  "version": "1.0.3",
-  "description": "Manages the Dark & Light mode switch for your website while being TailwindCSS compatible.",
-  "main": "useDarkMode.js",
+  "version": "1.1.0",
+  "description": "Manages Dark & Light mode switch in your TailwindCSS, Next.js or vanilla JS website.",
+  "main": "goDarkMode.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
