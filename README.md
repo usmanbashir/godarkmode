@@ -24,7 +24,7 @@ Using unpkg CDN:
 ## Usage
 
 **goDarkMode** is pretty simple. There is nothing to configure and it only has a single
-method, `.goDarkMode``:
+method, `.goDarkMode`:
 
 ```JavaScript
 // On a users first visit to the website, pick
